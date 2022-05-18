@@ -1,0 +1,319 @@
+.btn-outline-success {
+    color:white;
+    border: #F5BE3B;
+    background-color: #F5BE3B;
+}
+
+.btn-outline-success:hover {
+    color:white;
+    border: #f8b100;
+    background-color: #f8b100;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.bg-light {
+    background-color: #ffffff!important;
+}
+
+.nav-link {
+    font-weight: bold;
+}
+.nav-link:hover {
+    background-color: #F5BE3B;
+    border-radius: 5px;
+}
+
+
+.highlited {
+    color: #F5BE3B!important;
+}
+
+.highlited:hover {
+    color: #ffffff!important;
+}
+
+h1 {
+    color:  #F5BE3B;
+    font-size: 3rem;
+}
+
+h2 {
+    color:  #ffffff;
+    font-size: 2rem;
+}
+
+h3  {
+    font-size: 2rem;
+}
+
+.header_text {
+    margin-top: 6rem;
+    margin-right: 4rem;
+
+}
+
+
+.header {
+    background: rgb(219,219,219);
+    background: linear-gradient(25deg, rgba(219,219,219,1) 0%, rgba(219,219,219,0) 100%);
+}
+
+.services img {
+padding: 5rem;
+}
+
+.services {
+    background: rgb(219,219,219);
+    background: linear-gradient(25deg, rgba(219,219,219,1) 0%, rgba(219,219,219,0) 100%);
+}
+
+/*Zoom img smooth*/
+/* [1] The container */
+.img-hover-zoom {
+    position: relative;
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+    transition: transform 4.5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+    transform: scale(1.3);
+}
+/*Zoom img smooth*/
+
+/* Centered text */
+.caption {
+    color: white;
+    font-size: 3.5rem;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    font-weight: lighter;
+}
+/* Centered text */
+
+/*Reviews section carousel*/
+
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.card {
+    margin: 0 0.5em;
+    box-shadow: 6px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+
+}
+.carousel-inner {
+    padding: 1em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #F5BE3B;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    background-color: #ECECEC;
+}
+
+.bi {
+    font-size: 3rem;
+    color: #D09683;
+}
+
+.bi-star-fill {
+    font-size: 1.5rem;
+    color: #D0DC46;
+}
+
+.reviewsImg {
+    width: 50% !important;
+    height: 30% !important;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media (max-width: 567px) {
+    .card:not(:first-child) {
+        display: none;
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+    .card:not(:first-child) {
+        display: none;
+    }
+}
+
+@media  (max-width: 1200px) {
+    .card:not(:first-child, :nth-child(2)) {
+        display: none;
+    }
+}
+
+/*Reviews section carousel*/
+
+
+/*FAQ*/
+ul {
+    list-style-image: url('images/QuestionSquare.png');
+}
+
+.inside_bullet  {
+    list-style-image: url('images/icons/brick.png');
+
+}
+/*FAQ*/
+
+/*subscribe_text*/
+
+.subscribe_text {
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 5rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+    height: 100%;
+    background-color: #06214E;
+    position: relative;
+}
+
+/*Subscribe box*/
+.content {
+    font-size: 1rem;
+    width: 300px;
+    height: 40px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, .2);
+    border-radius: 60px;
+    overflow: hidden;
+}
+
+#right{
+    float: right;
+    position: absolute;
+    right: -62px;
+    top: -57px;
+    display: block;
+    height: 125px;
+    width: 125px;
+}
+
+.subscription {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.subscription .add-email{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+}
+
+.subscription .submit-email {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: calc(100% - 2px);
+    width: 100px;
+    border: none;
+    border-radius: 60px;
+    outline: none;
+    margin: 1px;
+    padding: 0 20px;
+    cursor: pointer;
+    background: #4ABEBB;
+    color: #FFFFFF;
+    transition: width .35s ease-in-out,
+    background .35s ease-in-out;
+}
+
+.subscription.done .submit-email {
+    width: calc(100% - 2px);
+    background: #C0E02E;
+}
+
+.subscription .submit-email .before-submit,
+.subscription .submit-email .after-submit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 38px;
+    transition: visibility .35s ease-in-out,
+    opacity .35s ease-in-out;
+}
+
+.subscription.done .submit-email .before-submit,
+.subscription:not(.done) .submit-email .after-submit {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.subscription .submit-email .after-submit {
+    transition-delay: .35s;
+}
+
+.subscription:not(.done) .submit-email .before-submit,
+.subscription.done .submit-email .after-submit {
+    visibility: visible;
+    opacity: 1;
+}
+/*Subscribe box*/
+/*subscribe_text*/
+
+
+/*footer*/
+footer {
+    background-image: url("/images/footer.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    padding: 3rem;
+    font-size: 1.5rem;
+}
+footer p {
+    word-wrap: break-word;
+
+}
+.social_media i {
+    font-size: 2rem;
+    color: #070707;
+    margin-right: 1rem;
+    transition: transform 1.5s ease;
+}
+
+.social_media i:hover {
+    transform: scale(1.3);
+}
+/*footer*/
+
+
