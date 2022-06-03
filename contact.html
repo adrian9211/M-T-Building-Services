@@ -10,6 +10,7 @@
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico"/>
     <!--    Lightbox2-->
     <link href="lightbox2/dist/css/lightbox.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
@@ -45,7 +46,7 @@
                     <a class="nav-link active highlited" aria-current="page" href="contact.html">Contact</a>
                 </li>
             </ul>
-            <button class="btn btn-outline-success me-5" type="submit">Call Now</button>
+            <a href="tel:+447516842497"><button class="btn btn-outline-success me-5" type="submit">Call Now</button></a>
         </div>
     </div>
 </nav>
@@ -81,7 +82,7 @@
                         </div>
                         <div class="col-10 ">
                             <h5 class="mb-sm-2 mb-md-3 mb-lg-3">Call Now</h5>
-                            <a href="tel:017687 72912" class="highlated">075 16842497</a>
+                            <p class="highlated">075 16842497</p>
                         </div>
                     </div>
                     <div class="row mb-sm-2 mb-md-3 mb-lg-5">
@@ -111,7 +112,7 @@
                 <div class="col-sm-12 col-md-12">
                     <div class="video m-lg-5 m-md-4">
                         <div class="ratio ratio-21x9 ">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9832795.108561058!2d-2.446621174789099!3d53.009850620119494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b51df5b73625%3A0x435bbe367ff8a52!2sMT%20Building%20Services!5e0!3m2!1spl!2spl!4v1653071234878!5m2!1spl!2spl"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9832795.108561058!2d-2.446621174789099!3d53.009850620119494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b51df5b73625%3A0x435bbe367ff8a52!2sMT%20Building%20Services!5e0!3m2!1spl!2spl!4v1653071234878!5m2!1spl!2spl"  style="border:0;" allowfullscreen="" ></iframe>
                         </div>
                     </div>
                 </div>
@@ -128,7 +129,7 @@
             <div class="container contact-form py-4 mx-auto d-block">
 
                 <!-- Bootstrap 5 starter form -->
-                <form name="contact" method="POST" action="" data-netlify-recaptcha="true" data-netlify="true">
+                <form name="contact" method="POST"  data-netlify-recaptcha="true" data-netlify="true">
                     <h2 class="main_text text-center pt-sm-0 pt-md-1 pt-lg-2 pb-4 fs-1 mb-4">Get in touch</h2>
 
                     <!-- Name input -->
@@ -147,7 +148,7 @@
                     <!-- Message input -->
                     <div class="mb-3">
                         <label class="form-label" for="message">Message</label>
-                        <textarea name="message" class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" maxlength="996" required></textarea>
+                        <textarea name="message" class="form-control" id="message"  placeholder="Message" style="height: 10rem;" maxlength="996" required></textarea>
                         <!-- There is some discrepancy between the maxlength value and the mysql character count, so I've set maxlength to 996 to compensate -->
                     </div>
 
@@ -181,7 +182,9 @@
                     We'll get back to you!</p>
                 <div class="content">
                     <form class="subscription mb   -5">
-                        <input class="add-email" type="email" placeholder="Your email">
+                        <label>
+                            <input class="add-email" type="email" placeholder="Your email">
+                        </label>
                         <button class="submit-email " type="button">
                             <span class="before-submit">Sign up!</span>
                             <span class="after-submit">Thank you for message!</span>
@@ -233,7 +236,7 @@
                 markbuilder85@yahoo.com</p>
         </div>
     </div>
-    <p class="text-center">© 2022 M.T Building Services
+    <p class="text-center">&copy; 2022 M.T Building Services
         - Kirkcaldy. All Rights Reserved.</p>
 </footer>
 

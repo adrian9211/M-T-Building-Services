@@ -168,27 +168,6 @@ padding: 5rem;
     border-radius: 50%;
 }
 
-@media (max-width: 567px) {
-    .card:not(:first-child) {
-        display: none;
-    }
-
-
-
-}
-
-@media (max-width: 768px) {
-    .card:not(:first-child) {
-        display: none;
-    }
-}
-
-@media  (max-width: 1200px) {
-    .card:not(:first-child, :nth-child(2)) {
-        display: none;
-    }
-}
-
 /*Reviews section carousel*/
 
 
@@ -366,3 +345,22 @@ footer p {
     padding-top: 3rem;
 }
 /*Contact*/
+
+
+@media (max-width: 567px) {
+    .card:not(:first-child) {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .card:not(:first-child) {
+        display: none;
+    }
+}
+
+@media  (max-width: 1200px) {
+    .card:not(:first-child, :nth-child(2)) {
+        display: none;
+    }
+}
